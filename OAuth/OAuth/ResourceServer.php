@@ -4,7 +4,7 @@
  * see LICENSE
  */
 
-namespace OAuth;
+namespace OAuth\Roles;
 
 /**
  *
