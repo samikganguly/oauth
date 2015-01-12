@@ -16,5 +16,5 @@ interface Client {
      * @return Attribute an Attribute exposed by this resource owner
      */
     public function getAttribute($name);
-    public function checkAuthState($resourceAuthResp);
+    public function checkAuthState($resourceAuthRequest, $resourceAuthResp);
 }

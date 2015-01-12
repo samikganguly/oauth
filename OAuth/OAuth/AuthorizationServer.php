@@ -41,11 +41,4 @@ interface AuthorizationServer {
      * @throws ServiceException
      */
     public function getAccessToken($auth, $resourceAccessRequest);
-    /**
-     * @param AuthToken $auth a token of authorization from authorization server
-     * @return RefreshToken a refresh token for client's access to resource when user is not online
-     * @throws AccessDeniedException
-     * @throws ServiceException
-     */
-    public function getRefreshToken($auth);
 }
