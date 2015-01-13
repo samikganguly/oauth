@@ -10,4 +10,5 @@ namespace OAuth\Responses;
  */
 interface ResourceAccessResponse {
     public function getAccessToken();
+    public function getRefreshToken();
 }
