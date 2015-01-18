@@ -20,7 +20,8 @@ interface ResourceServer {
      * @param AccessToken $accessToken Access token issued by Authorization Server
      * @return mixed a handle of this resource
      * @throws AccessDeniedException
+     * @throws InvalidScopeException
      * @throws ServiceException
      */
-    public function getResource($resourceID, $accessToken);
+    public function getResource($resourceID, \OAuth\AccessToken $accessToken);
 }

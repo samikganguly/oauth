@@ -27,13 +27,18 @@ interface AuthorizationServer {
      */
     public function registerClient($client);
     /**
+     * authorization endpoint of authorization server
      * @param ResourceAuthRequest $resourceAuthRequest a request by client for authorization to access resource
      * @return AuthToken a token of authorization from authorization server
      * @throws NoAuthException
+     * @throws InvalidClientException
+     * @throws InvalidResourceServerException
+     * @throws InvalidScopeException
      * @throws ServiceException
      */
     public function getAuthorization($resourceAuthRequest);
     /**
+     * token endpoint of authorization server
      * @param AuthToken $auth a token of authorization from authorization server
      * @param ResourceAccessRequest $resourceAccessRequest a request by client for access token
      * @return AccessToken Access token issued by Authorization Server
